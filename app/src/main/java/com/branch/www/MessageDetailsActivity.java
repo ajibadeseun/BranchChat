@@ -84,6 +84,7 @@ public class MessageDetailsActivity extends BaseActivity {
                     Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
                     break;
                 case SUCCESS:
+                    EditMessage.setText("");
                     retrieveChats();
                     break;
             }
