@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingStart="18dp"
+    android:paddingLeft="18dp"
+    android:paddingEnd="18dp"
+    android:paddingRight="18dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/branch_app"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"/>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       app:errorEnabled="true"
+       android:id="@+id/username_layout"
+       android:layout_height="wrap_content">
+       <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+           android:hint="@string/username"
+           android:id="@+id/username_edit"
+           android:layout_height="wrap_content"/>
+   </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        app:errorEnabled="true"
+        android:id="@+id/password_layout"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="@string/password"
+            android:id="@+id/password_edit"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:text="@string/login"
+        android:textSize="16sp"
+        android:id="@+id/login_btn"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
